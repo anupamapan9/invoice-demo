@@ -22,20 +22,20 @@
         }
 
         .color-1 {
-            background-color: #001233;
+            background-color: #009500;
             color: whitesmoke !important;
         }
 
         .color-2 {
-            background-color: #001845;
+            background-color: #1e9500;
         }
 
         .color-3 {
-            background-color: #0353a4
+            background-color: #439500;
         }
 
         .color-4 {
-            background-color: #023e7d;
+            background-color: #1e9500;
             color: white
         }
 
@@ -43,16 +43,16 @@
 
 
             border-radius: 10px;
-            background: #002855;
-            box-shadow: inset 7px 7px 14px #001630,
-                inset -7px -7px 14px #003a7a;
+            background: #1e9500;
+            box-shadow: inset 7px 7px 14px #1e9500,
+                inset -7px -7px 14px #1e9500;
         }
 
         .print-button,
         .download-button {
-            color: #1D9AF2;
-            background-color: #292D3E;
-            border: 1px solid #1D9AF2;
+            color: #1df241;
+            background-color: #1c1d22;
+            border: 1px solid #1df24bca;
             border-radius: 4px;
             padding: 0 15px;
             cursor: pointer;
@@ -62,12 +62,12 @@
         }
 
         .print-button:hover {
-            box-shadow: 1px 1px #53a7ea, 2px 2px #53a7ea, 3px 3px #53a7ea;
+            box-shadow: 1px 1px #1df24bca, 2px 2px #1df24bca, 3px 3px #1df24bca;
             transform: translateX(-3px);
         }
 
         .download-button:hover {
-            box-shadow: 1px 1px #53a7ea, 2px 2px #53a7ea, 3px 3px #53a7ea;
+            box-shadow: 1px 1px #1df24bca, 2px 2px #1df24bca, 3px 3px #1df24bca;
             transform: translateX(-3px);
         }
     </style>
@@ -77,7 +77,7 @@
     <nav class="navbar navbar-light color-1">
         <div class="container">
             <a class="navbar-brand m-auto fw-bold fs-1" style="color: whitesmoke" href="#">
-                <i class="bi bi-receipt-cutoff"> </i> <span> YOUR INVOICE</span>
+                <i class="bi bi-receipt-cutoff"> </i> <span> YOUR INVOICE OF APAN STORE</span>
             </a>
         </div>
     </nav>
@@ -89,7 +89,7 @@
             <div class="input-group">
                 <span class="input-group-text">Buyer details</span>
                 <textarea class="form-control" aria-label="With textarea" id="buyer-details-input"></textarea>
-                <button class="btn btn-primary" id="detail-submit-btn">Submit</button>
+                <button class="btn btn-danger" id="detail-submit-btn">Submit</button>
             </div>
             <!--  -->
 
@@ -111,7 +111,7 @@
                     <input type="number" class="form-control" aria-label="Sizing example input"
                         aria-describedby="inputGroup-sizing-sm" id="item-quantity-input" />
                 </div>
-                <button type="button" class="btn btn-primary" id="add-details-btn">Add </button>
+                <button type="button" class="btn btn-danger" id="add-details-btn">Add </button>
 
             </div>
         </div>
@@ -133,13 +133,13 @@
             <div>
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
-                        <div class="color-4 p-3 h-100 rounded text-warning">date : <span id="show-date"></span></div>
+                        <div class="color-4 p-3 h-100 rounded text-white">date : <span id="show-date"></span></div>
                     </div>
 
                     <div class="col">
                         <div class="color-4 p-3 h-100 rounded">
 
-                            <span class='text-warning'>
+                            <span class='text-white'>
                                 Invoice To
                             </span> <br>
                             <span id="buyer-info">
@@ -152,7 +152,7 @@
                     </div>
                     <div class="col">
                         <div class="color-4 p-3 h-100 rounded">
-                            <span class='text-warning'>
+                            <span class='text-white'>
                                 Seller.
                             </span> <br>
                             <span>
@@ -221,14 +221,13 @@
                     <div class="col">
                         <div class="color-4 p-3 h-100 rounded">
 
-                            <span class='text-warning'>
+                            <span class='text-white'>
                                 Bank Transfer
                             </span> <br>
                             <span>
 
-                                Account Name: Sagar Biswas
-                                Account Number:1234567890934
-                                Code: 231231231212312
+                                Account Name: Anupam Mitra<br>
+                                Account Number: 5454151231
                             </span>
 
 
@@ -237,14 +236,14 @@
                     </div>
                     <div class="col">
                         <div class="color-4 p-3 h-100 rounded text-end">
-                            <p class='text-warning'>
+                            <p class='text-white'>
                                 Total Amount
                             </p>
                             <p>
 
                                 $
 
-                                <span class='text-warning fw-bold fs-2' id="grand-total-2">
+                                <span class='text-white fw-bold fs-2' id="grand-total-2">
                                     0
                                 </span> <br>
                                 Taxes Included
@@ -254,9 +253,8 @@
                 </div>
             </div>
             <!-- end of bottom part -->
-            <p>
-                Get started by creating a new file or uploading an existing file. We recommend every repository include
-                a README, LICENSE, and .gitignore.
+            <p class="text-center fs-4">
+                Please visit our store again , Have a great day!!!
             </p>
         </div>
     </section>
@@ -267,7 +265,7 @@
     </section>
     <footer class='color-1 text-center'>
         <p class='p-4'>
-            All rights reserve @shda.com
+            All rights reserve anupamMitra
         </p>
 
     </footer>

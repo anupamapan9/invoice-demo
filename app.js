@@ -28,10 +28,8 @@ document.getElementById('add-details-btn').addEventListener('click', function ()
     tr.appendChild(td4)
     const tableBody = document.getElementById("info-table");
     tableBody.appendChild(tr);
+    totalCalculation()
 
-    const subTotal = calSubTotal()
-    const subTotalToDisplay = document.getElementById("sub-total");
-    subTotalToDisplay.innerText = subTotal;
 })
 
 function calSubTotal() {
@@ -43,5 +41,20 @@ function calSubTotal() {
         subTotalPrice = subTotalPrice + price;
     }
     return subTotalPrice;
+
+}
+function totalCalculation() {
+    const subTotal = calSubTotal();
+    const subTotalToDisplay = document.getElementById("sub-total");
+    subTotalToDisplay.innerText = subTotal;
+    const tax = subTotal * .2;
+    const taxOutput = document.getElementById("tax");
+    taxOutput.innerText = tax;
+
+    const grandTotal = subTotal + tax;
+    const grandTotalOutput1 = document.getElementById("grand-total");
+    grandTotalOutput1.innerText = grandTotal;
+    const grandTotalOutput2 = document.getElementById("grand-total-2")
+    grandTotalOutput2.innerText = grandTotal;
 
 }
